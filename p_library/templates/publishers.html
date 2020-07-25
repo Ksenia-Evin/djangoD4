@@ -13,7 +13,7 @@
 <body>
 <div class="container-fluid">
 
-    <h1>
+    <h1 class="display-3">
         Добро пожаловать в {{ title }}  <br>
     </h1>
     <h3> 
@@ -21,9 +21,9 @@
         Сейчас их {{ publishers|length }}:
     </h3>
 
-    <ul>
+    <ul class="list-group">
         {% for publisher in publishers %}
-        <li>{{publisher}}</li>
+        <li class="list-group-item">{{publisher}}</li>
         {% endfor %}
     </ul>
 </div>
