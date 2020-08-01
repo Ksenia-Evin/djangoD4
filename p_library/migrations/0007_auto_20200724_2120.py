@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='book',
             name='publisher',
-            field=models.ForeignKey(default='MOW', on_delete=django.db.models.deletion.CASCADE, to='p_library.Publisher'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='p_library.Publisher'),
         ),
     ]

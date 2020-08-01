@@ -4,7 +4,7 @@ from p_library.models import Book, Author, Publisher, Friend
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    fields = ('ISBN', 'title', 'description', 'year_release', 'author', 'price', 'publisher')
+    pass
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
     pass
