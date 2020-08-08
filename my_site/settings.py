@@ -124,12 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    'D:\SkillFactory\projects\HomeWork\D3_1\SkillFactoryprojectsHomeWorkD3_1\my_site\p_library\static',
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    )
+# STATICFILES_DIRS = (
+#     'D:\SkillFactory\projects\HomeWork\D3_1\SkillFactoryprojectsHomeWorkD3_1\my_site\p_library\static',
+#     )
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
