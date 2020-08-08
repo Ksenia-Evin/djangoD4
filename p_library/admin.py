@@ -4,8 +4,7 @@ from p_library.models import Book, Author, Publisher, Friend
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    pass    
-    
+    pass
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
     pass

@@ -10,28 +10,22 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
-    {% extends 'base.html' %}
-    {% block content %}
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">Title</th>
-            <th scope="col">Count</th>
-            <th scope="col">Friends</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for book in books %}
-        <tr>
-            <td>{{ book.title }}</td>
-            <td>{{ book.copy_count }}</td>
-            <td>{% for friend in book.friend.all %}
-                {{ friend.name }} <br>
-                {% endfor %}
-            </td>
-        </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-    {% endblock %}
+<body>
+    <nav class="navbar navbar-light bg-success">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+    </nav>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-success">
+        <div class="container">
+          <span class="text-mute">&copy; Footer</span>
+        </div>
+      </footer>
+</body>
 </html>

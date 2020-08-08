@@ -122,3 +122,8 @@ def books_and_friends(request):
         "books": books,
     }
     return HttpResponse(template.render(biblio_data, request))
+
+# def base(request):
+#     template = loader.get_template('base.html')
+#     books = Book.objects.all()
+#     return HttpResponse(template.render(books, request))
