@@ -139,9 +139,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    'D:\SkillFactory\projects\HomeWork\D3_1\SkillFactoryprojectsHomeWorkD3_1\my_site\p_library\static',
-    )
+# STATICFILES_DIRS = (
+#     'D:\SkillFactory\projects\HomeWork\D3_1\SkillFactoryprojectsHomeWorkD3_1\my_site\p_library\static',
+#     )
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
